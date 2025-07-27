@@ -1,0 +1,23 @@
+# Android
+.gradle/
+.idea/
+/.idea/caches
+*.iml
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build/
+local.properties
+/captures
+.externalNativeBuild
+.cxx
+
+# Room database
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+

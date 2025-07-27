@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Control de Medicamentos</string>
+    <string name="nombre_medicamento">Nombre del Medicamento</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="periodicidad">Periodicidad</string>
+    <string name="guardar">Guardar</string>
+</resources>

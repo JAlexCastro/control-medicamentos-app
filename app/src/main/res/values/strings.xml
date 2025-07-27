@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Medication Tracker</string>
+    <string name="nombre_medicamento">Medicine Name</string>
+    <string name="cantidad">Quantity</string>
+    <string name="periodicidad">Frequency</string>
+    <string name="guardar">Save</string>
+</resources>
