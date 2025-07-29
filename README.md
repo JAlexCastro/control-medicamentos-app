@@ -5,8 +5,15 @@ Aplicación móvil desarrollada en Kotlin con Jetpack Compose que permite a los 
 ---
 
 ## 📱 Capturas de Pantalla
+### (Home) Lista Vacía
+![Proyecto](app/src/main/res/drawable/IMG/LISTA_VACIA.jpg)
 
-*Imagenes*
+### Registro Medicamentos
+![Proyecto](app/src/main/res/drawable/IMG/REGISTRO_MEDICAMENTOS.jpg)
+
+### Lista Con Registros
+![Proyecto](app/src/main/res/drawable/IMG/LISTA_4_REGISTROS.jpg)
+
 
 <!--
 ![Pantalla Principal](screenshots/listado.png)
@@ -99,11 +106,16 @@ Aplicación móvil desarrollada en Kotlin con Jetpack Compose que permite a los 
 
 ## 🔒 Room: Migración de esquema
 
-Si cambias la entidad `Medicamento`, incrementa la versión en `AppDatabase.kt` y usa:
+Si cambias la entidad Medicamento (agregas, quitas o editas campos), aumenta la versión en AppDatabase.kt:
 
+```kotlin
+@Database(entities = [Medicamento::class], version = 4)
+```
+Y durante el desarrollo puedes usar:
 ```kotlin
 .fallbackToDestructiveMigration()
 ```
+Esto borra y recrea la base de datos automáticamente si hay cambios de versión.
 
 ---
 
@@ -118,6 +130,9 @@ Si cambias la entidad `Medicamento`, incrementa la versión en `AppDatabase.kt` 
 
 ## ✍ Autor
 
-**José Alejandro Castro**
+**José Alejandro Contreras**
 
 Apasionado por la ingeniería de datos y el desarrollo de software.
+
+[LinkedIn: José Alejandro Castro](https://www.linkedin.com/in/alejandro-castro-a173a0221)
+
