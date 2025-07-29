@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [Medicamento::class], version = 2)
+@Database(entities = [Medicamento::class], version = 4)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun medicamentoDao(): MedicamentoDao
 
@@ -19,7 +19,7 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "medicamentos.db"
                 )
-                    .fallbackToDestructiveMigration() // <- ESTA ES LA LÍNEA CLAVE
+                    .fallbackToDestructiveMigration()
                     .build()
                     .also { INSTANCE = it }
             }

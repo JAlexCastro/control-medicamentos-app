@@ -84,7 +84,7 @@ fun MedicamentoFormScreen(
         // 4. Tipo de dosis (selector con radio buttons)
         Text("Tipo de dosis:")
         Row {
-            listOf("mg", "pastillas", "ml").forEach {
+            listOf("Mg", "ML", "MCG").forEach {
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     modifier = Modifier.padding(end = 8.dp)
